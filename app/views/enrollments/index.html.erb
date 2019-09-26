@@ -1,0 +1,24 @@
+<div class="container p-3 mt-4">
+  <h1>My Retreat Enrollments</h1>
+
+  <table class="table table-hover mt-5">
+    <thead class="thead-dark table-borderless table-hover">
+      <tr>
+        <th>Retreat</th>
+        <th>Price</th>
+        <th>Location</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @enrollments.sort_by(&:created_at).reverse.each do |enrollment| %>
+        <tr>
+          <td><%= link_to enrollment.retreat.name, retreat_path(enrollment.retreat), class: "btn-mustard mt-4"%></td>
+          <td><%= enrollment.retreat.description %></td>
+          <td><%= enrollment.retreat.location %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
+
+
