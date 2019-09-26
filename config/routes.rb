@@ -5,4 +5,10 @@ Rails.application.routes.draw do
 
   resources :thread_admins
 
+  resources :retreats do
+    resources :enrollments, only: [:new, :create]
+  end
+
+  resources :enrollments, only: [:index]
+
 end
