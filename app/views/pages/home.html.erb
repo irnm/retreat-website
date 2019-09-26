@@ -1,6 +1,15 @@
 <h1>Pages#home</h1>
 <p>Find me in app/views/pages/home.html.erb</p>
 
+
+<div class="banner">
+  <div id="banner-info" class="container">
+    <h1>Welcome to Meerkatnb</h1>
+    <p>The perfect platform to find a Meerkat to help you solve your problems</p>
+    <a class="btn btn-transparent" href="#">Search available Meerkats!</a>
+  </div>
+</div>
+
 <% if current_user %>
 
 <%= link_to 'Sign-out', destroy_user_session_path, method: :delete %>
@@ -14,3 +23,4 @@
 <% end %>
 
 <%= link_to 'Admin', thread_admins_path %>
+
