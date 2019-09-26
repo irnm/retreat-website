@@ -1,0 +1,2 @@
+class RetreatsController < ApplicationController
+end
