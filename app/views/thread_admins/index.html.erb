@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Thread Admins</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Body</th>
+      <th>User</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @thread_admins.each do |thread_admin| %>
+      <tr>
+        <td><%= thread_admin.title %></td>
+        <td><%= thread_admin.body %></td>
+        <td><%= thread_admin.user %></td>
+        <td><%= link_to 'Show', thread_admin %></td>
+        <td><%= link_to 'Edit', edit_thread_admin_path(thread_admin) %></td>
+        <td><%= link_to 'Destroy', thread_admin, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Thread Admin', new_thread_admin_path %>

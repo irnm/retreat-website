@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @thread_admin.title %>
+</p>
+
+<p>
+  <strong>Body:</strong>
+  <%= @thread_admin.body %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @thread_admin.user %>
+</p>
+
+<%= link_to 'Edit', edit_thread_admin_path(@thread_admin) %> |
+<%= link_to 'Back', thread_admins_path %>
