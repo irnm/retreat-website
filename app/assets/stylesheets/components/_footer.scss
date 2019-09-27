@@ -1,0 +1,33 @@
+.footer {
+  background-color: #207561;
+  padding: 20px 10px;
+  text-align: center;
+}
+
+.footer > h4 {
+  color: #fff7f7;
+}
+
+.social-media-list {
+  list-style-type: none;
+  padding-left: 0px;
+}
+
+.social-media-list > li {
+  display: inline-block;
+  padding: 20px 20px;
+}
+
+.fab {
+  color: #fff7f7;
+  font-size: 40px;
+}
+
+.fab:hover {
+  font-weight: bold;
+}
+
+.footer > p {
+  font-size: 10px;
+  color: #fff7f7;
+}
