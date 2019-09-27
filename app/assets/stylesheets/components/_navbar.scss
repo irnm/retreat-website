@@ -1,17 +1,21 @@
 .navbar-lewagon {
   justify-content: space-between;
   background: white;
+
+  .dropdown-item {
+    color: $savage-green;
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+
+  .navbar-collapse {
+    flex-grow: 0;
+  }
+
+  .navbar-brand {
+    color: $savage-green;
+    font-weight: 900;
+  }
 }
 
-.navbar-lewagon .navbar-collapse {
-  flex-grow: 0;
-}
-
-.navbar-lewagon .navbar-brand img {
-  width: 40px;
-}
-
-.avatar {
-  width: 74px;
-  border-radius: 50%;
-}

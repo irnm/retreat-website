@@ -1,0 +1,32 @@
+.banner {
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-position: center;
+  height: 100vh;
+  padding: 150px 0;
+  background: linear-gradient(rgba(0,0,0,0.04),rgba(0,0,0,0.3)),
+  url('http://www.aguentinhadocampo.com/wp-content/uploads/2016/03/casa-de-ferias.jpg');
+  margin-top: -40px;
+}
+
+.banner h1 {
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 20px;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+  font-size: 42px;
+  font-weight: bold;
+}
+
+.banner p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: lighter;
+  font-size: 20px;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+}
+
+#banner-info {
+  width: 700px;
+  margin-left: 10%;
+}
