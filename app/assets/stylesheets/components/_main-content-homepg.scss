@@ -1,0 +1,43 @@
+.main-container {
+  margin: 0 auto;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.info {
+  padding-right: 20px;
+  width: 39%;
+}
+
+.cards {
+  padding-left: 20px;
+}
+
+.details {
+  width: 404px;
+  height: 104px;
+  text-align: left;
+}
+
+.details > p {
+  font-size: 13px;
+  color: grey;
+}
+
+.fas {
+  color: #589167;
+  font-size: 50px;
+  padding-right: 40px;
+}
